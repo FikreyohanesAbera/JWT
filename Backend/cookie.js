@@ -13,7 +13,7 @@ function setAuthCookies(res, { accessToken, refreshToken }) {
     httpOnly: true,
     secure: true,
     sameSite: "lax",
-    path: "/auth/refresh", // refresh cookie only sent to refresh endpoint
+    path: "/auth/refresh", 
     maxAge: 30 * 24 * 60 * 60 * 1000,
   });
 }
